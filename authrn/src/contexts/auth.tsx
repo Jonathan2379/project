@@ -19,7 +19,7 @@ export const AuthProvider: React.FC = ({children}) => {
             const storagedUser = await  AsyncStorage.getItem('@RNAuth:user');
             const storagedToken = await  AsyncStorage.getItem('@RNAuth:token');
             
-            if(storagedToken && storagedToken){
+            if(storagedToken && storagedUser){
                 setUser(JSON.parse(storagedUser));
             }
         }

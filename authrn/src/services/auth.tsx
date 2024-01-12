@@ -1,7 +1,7 @@
 interface Response{
     token: string;
     user: {
-        nome: string;
+        name: string;
         email: string;
     }
 }
